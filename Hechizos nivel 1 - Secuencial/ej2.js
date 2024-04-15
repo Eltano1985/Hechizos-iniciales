@@ -10,9 +10,18 @@ const leer = require("prompt-sync")();
  * Por ejemplo si hay 7 varitas y 4 libros a usar los ingredientes necesarios son 29
  */
 
+const ELEMENTO_1 = "varitas";
+const ELEMENTO_2 = "libros";
+
 
 function main() {
-    
+    console.log("Ingrese la cantidad de", ELEMENTO_1);
+    CantElem1 = Number(leer());
+    console.log("Ingrese la cantidad de", ELEMENTO_2);
+    CantElem2 = Number(leer());
+    console.log("la cantidad de ingredientes a usar es", CantElem1*3 + CantElem2*2);
+
+
 }
 
 
