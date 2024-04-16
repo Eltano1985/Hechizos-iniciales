@@ -9,16 +9,20 @@ const leer = require("prompt-sync")();
  */
 
 const EDAD = "edad del mago";
-const TIEMPO = "cantidad de dias de practica del hechizo"
-const POTENCIA = "potencia del hechizo"
+const TIEMPO = "cantidad de dias de practica del hechizo";
+const POTENCIA = "potencia del hechizo";
 
 
 function main() {
+    
+    let edad = 0;
+    let tiempo = 0;
+    
     console.log("Ingrese la", EDAD);
-    Edad=Number(leer());
+    edad=Number(leer());
     console.log("Ingrese la", TIEMPO);
-    Tiempo=Number(leer());
-    console.log("La", POTENCIA, "es", Edad*2+Tiempo/2);
+    tiempo=Number(leer());
+    console.log("La", POTENCIA, "es", edad*2+tiempo/2);
 
 }
 

@@ -9,10 +9,28 @@ const leer = require("prompt-sync")();
  * Por ejemplo si tiene 12 años y con permiso de los padres no le sera permitido, si tiene 14 y no cuenta con permiso de los padres no le sera permitido, en otro caso si tiene 18 puede realizar la actividad
  */
 
+const LUGAR = "pueblo de Hogsmeade";
 
 function main() {
-    
-}
 
+    let edad = 0;
+    let permiso = 0;
+
+    console.log("Ingrese su edad");
+    edad = Number(leer());
+    console.log("Tiene (si) o no tiene (no) permiso de los padres");
+    permiso = leer();
+
+    if (edad >= 13 && permiso == "si") {
+        console.log("Puede vistar el", LUGAR);
+
+    } else if(edad >= 17){
+        console.log("Puede visitar el", LUGAR);
+
+    }else {
+        console.log("No puede visitar el", LUGAR);
+    }
+
+}
 
 main();

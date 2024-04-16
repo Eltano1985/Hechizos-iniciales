@@ -8,18 +8,22 @@ const leer = require("prompt-sync")();
  * Por ejemplo si la cantidad de plumas usadas son 350 y el peso base es de 1.5kg entonces el total es de 36.5kg
  */
 
-const ALFOMBRA = "Nimbus 2000"
+const ESCOBA = "Nimbus 2000";
 const ELEMENTO_1 = "plumas de fenix";
-const PESO_ELEM_1= "0.1";
-
+const PESO_ELEM_1= 0.1;
+const UNIDAD_PESO = "kg";
 
 
 function main() {
-    console.log("Ingrese el peso base de la", ALFOMBRA);
-    PesoBase = Number(leer());
+    
+    let pesoBase = 0;
+    let cantElem1 = 0;
+    
+    console.log("Ingrese el peso en", UNIDAD_PESO, "base de la", ESCOBA);
+    pesoBase = Number(leer());
     console.log("Cuantas", ELEMENTO_1, "va a utiizar");
-    CantElem1 = Number(leer());
-    console.log("El peso total de la", ALFOMBRA, "es", PesoBase + CantElem1*PESO_ELEM_1, "Kg");
+    cantElem1 = Number(leer());
+    console.log("El peso total de la", ESCOBA, "es", pesoBase + cantElem1*PESO_ELEM_1, UNIDAD_PESO);
 
 
 }

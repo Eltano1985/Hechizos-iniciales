@@ -15,11 +15,15 @@ const ELEMENTO_2 = "libros";
 
 
 function main() {
+    
+    let cantElem1 = 0
+    let cantElem2 =0
+    
     console.log("Ingrese la cantidad de", ELEMENTO_1);
-    CantElem1 = Number(leer());
+    cantElem1 = Number(leer());
     console.log("Ingrese la cantidad de", ELEMENTO_2);
-    CantElem2 = Number(leer());
-    console.log("la cantidad de ingredientes a usar es", CantElem1*3 + CantElem2*2);
+    cantElem2 = Number(leer());
+    console.log("la cantidad de ingredientes a usar es", cantElem1*3 + cantElem2*2);
 
 
 }
