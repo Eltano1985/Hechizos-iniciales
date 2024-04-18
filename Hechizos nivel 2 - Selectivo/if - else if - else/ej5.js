@@ -18,19 +18,19 @@ function main() {
 
     console.log("Ingrese su edad");
     edad = Number(leer());
-    console.log("Tiene (si) o no tiene (no) permiso de los padres");
-    permiso = leer();
 
-    if (edad >= 13 && permiso == "si") {
-        console.log("Puede vistar el", LUGAR);
-
-    } else if(edad >= 17){
-        console.log("Puede visitar el", LUGAR);
-
-    }else {
+    if (edad < 13) {
         console.log("No puede visitar el", LUGAR);
+    } else if (edad < 17) {
+        console.log("Tiene (si) o no tiene (no) permiso de los padres?");
+        permiso = leer();
+        if (permiso == "si") {
+            console.log("Puede vistar el", LUGAR);
+        }
+    } else {
+        console.log("Puede visitar el", LUGAR);
     }
-
 }
+
 
 main();
