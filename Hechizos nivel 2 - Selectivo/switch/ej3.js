@@ -22,7 +22,40 @@ Avada Kedavra
 
 
 function main() {
+
+    let codigoNumerico = 0;
+
+    console.log("Ingrese un codigo numerico de 4 digitos");
+    codigoNumerico = Number(leer());
     
+    switch (codigoNumerico) {
+        case 1111:
+            console.log("Expecto Patronum");
+            break;
+
+        case 2222:
+            console.log("Wingardium Leviosa");
+            break;
+
+        case 3333:
+            console.log("Expelliarmus");
+            break;
+
+        case 4444:
+            console.log("Avada Kedavra");
+            break;
+
+        default:
+            console.log("el código es incorrecto");
+
+    }
+
+
+
+
+
+
+
 }
 
 
