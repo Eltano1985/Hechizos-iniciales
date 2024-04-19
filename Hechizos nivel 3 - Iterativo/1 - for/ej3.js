@@ -20,9 +20,20 @@ const leer = require("prompt-sync")();
     Deja que la poción repose durante 5 minutos antes de su uso.
  * 
  */
+const INGREDIENTE_1 = "sanguijuelas reventadas";
+const INGREDIENTE_2 = "unidades de pulverizado de cuerno de Bicornio";
+const INGREDIENTE_3 = "pelos de gato negro";
+const INGREDIENTE_4 = "colas de serpiente";
+
 
 
 function main() {
+
+for (let index = 0; index < array.length; index++) {
+   const element = array[index];
+   
+}
+
 
 }
 
