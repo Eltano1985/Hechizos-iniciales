@@ -29,13 +29,45 @@ const INGREDIENTE_4 = "colas de serpiente";
 
 function main() {
 
-for (let index = 0; index < array.length; index++) {
-   const element = array[index];
-   
+   let cantidadIngresada = 0;
+
+   for (let contador = 0; contador < 6; contador++) {
+      console.log("Ingrese la cantidad correcta de", INGREDIENTE_1);
+      cantidadIngresada = Number(leer());
+      if (cantidadIngresada == 3) {
+         for (let contador2 = 0; contador2 < 5; contador2++) {
+            console.log("Ingrese la cantidad correcta de", INGREDIENTE_2);
+            cantidadIngresada = Number(leer());
+            if (cantidadIngresada == 5) {
+               for (let contador3 = 0; contador3 < 4; contador3++) {
+                  console.log("Ingrese la cantidad correcta de", INGREDIENTE_3);
+                  cantidadIngresada = Number(leer());
+                  if (cantidadIngresada == 1) {
+                     for (let contador4 = 0; contador4 < 3; contador4++) {
+                        console.log("Ingrese la cantidad correcta de", INGREDIENTE_4);
+                        cantidadIngresada = Number(leer());
+                        if (cantidadIngresada == 2) {
+                           console.log("Ingresaste la cantidad correcta de todos los ingrediente");
+                           contador = 10
+                        }
+                     }
+
+                  }
+
+               }
+            }
+         }
+
+
+
+      }
+
+   }
+
 }
 
 
-}
+
 
 
 main();
