@@ -48,7 +48,10 @@ function main() {
                         cantidadIngresada = Number(leer());
                         if (cantidadIngresada == 2) {
                            console.log("Ingresaste la cantidad correcta de todos los ingrediente");
-                           contador = 10
+                           contador = 40;
+                           contador2 = 50;
+                           contador3 = 60;
+                           contador4 = 70;
                         }
                      }
 
