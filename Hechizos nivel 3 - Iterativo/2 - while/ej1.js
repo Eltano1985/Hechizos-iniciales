@@ -20,10 +20,42 @@ Considerar que:
 - cada hechizo tiene un valor de daño unico y el enemigo tiene 1 solo hechizo de ataque
  */
 
+const VIDA_INICIAL_JUGADOR = 10;
+const VIDA_INICIAL_ENEMIGO = 15;
+const HECHIZO_1 = "Wingardium leviosa";
+const DAÑO_HECHIZO_1 = "3";
+const HECHIZO_2 = "Patronus";
+const DAÑO_HECHIZO_2 = "2";
+const HECHIZO_3 = "Expelliarmus";
+const DAÑO_HECHIZO_3 = "1";
 
 function main() {
-    
+
+console.log("Ingrese uno de los 3 numeros de hechizos");
+numeroDeHechizo = Number(leer());
+
+let min = 1;
+let max = 3;
+let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log("El numero secreto de hechizo es", numeroAleatorio);
+
+while (numeroDeHechizo == numeroAleatorio) {
+    if (numeroDeHechizo == 1) {
+        console.log("Lo dañaste con un", HECHIZO_1, "y le hiciste", DAÑO_HECHIZO_1, "puntos de daño");
+        
+    }
 }
+
+
+
+
+   }
+    
+    
+
+
+
+
 
 
 main();

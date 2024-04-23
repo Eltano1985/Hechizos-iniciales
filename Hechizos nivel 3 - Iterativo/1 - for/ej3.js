@@ -35,23 +35,24 @@ function main() {
       console.log("Ingrese la cantidad correcta de", INGREDIENTE_1);
       cantidadIngresada = Number(leer());
       if (cantidadIngresada == 3) {
+         contador = 6;
          for (let contador2 = 0; contador2 < 5; contador2++) {
             console.log("Ingrese la cantidad correcta de", INGREDIENTE_2);
             cantidadIngresada = Number(leer());
             if (cantidadIngresada == 5) {
+               contador2 = 5;
                for (let contador3 = 0; contador3 < 4; contador3++) {
                   console.log("Ingrese la cantidad correcta de", INGREDIENTE_3);
                   cantidadIngresada = Number(leer());
                   if (cantidadIngresada == 1) {
+                     contador3 = 4;
                      for (let contador4 = 0; contador4 < 3; contador4++) {
                         console.log("Ingrese la cantidad correcta de", INGREDIENTE_4);
                         cantidadIngresada = Number(leer());
                         if (cantidadIngresada == 2) {
-                           console.log("Ingresaste la cantidad correcta de todos los ingrediente");
-                           contador = 40;
-                           contador2 = 50;
-                           contador3 = 60;
-                           contador4 = 70;
+                           contador4 = 3;
+                           console.log("Felicitaciones!! Ingresaste la cantidad correcta de todos los ingrediente");
+                           
                         }
                      }
 
