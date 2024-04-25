@@ -14,13 +14,45 @@ Recuerda, tanto tú como tu ser querido pueden recibir ataques de los Dementores
 
 ¿Estás listo para adentrarte en esta emocionante aventura y demostrar tu valentía contra las fuerzas oscuras? ¡Adelante, el destino del bosque dependen de vos!
  */
-
+const VIDA_INICIAL_JUGADOR = 100
+const VIDA_INICIAL_AMIGO = 80
+const DANIO_JUGADOR = 10
+const DANIO_AMIGO = 8
 
 function main() {
 
+let numeroIngresado = 0;
+let numeroAleatorio = 0;
+let min = 1;
+let max = 3;
+let vidaDelJugador = 100;
+let vidaDelAmigo = 80;
 
+console.log("Ingrese un numero entre 0 y 3");
+numeroIngresado = Number(leer());
 
+numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+console.log("El numero aleatorio es", numeroAleatorio);
+
+if (numeroIngresado == numeroAleatorio) {
+    console.log("Protegiste tus recuerdos y los de tu amigo");
+    console.log("Tu vida es ", vidaDelJugador, "y la de tu amigo es", vidaDelAmigo);
 }
+if (numeroIngresado > numeroAleatorio) {
+    console.log("Los dementores te atacaron a vos");
+    console.log("Tu vida es", vidaDelJugador = vidaDelJugador - DANIO_JUGADOR);
+}
+if (numeroIngresado < numeroAleatorio) {
+    console.log("Los dementores atacaron a tu amigo");
+    console.log("La vida de tu amigo es", vidaDelAmigo = vidaDelAmigo - DANIO_AMIGO );
+}
+    
+
+
+
+    
+}
+
 
 
 main();
