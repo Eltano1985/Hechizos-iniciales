@@ -65,9 +65,7 @@ if (numeroDeHechizo != numeroAleatorio ) {
     console.log("Tu vida es", vidaDelJugador = VIDA_INICIAL_JUGADOR - DANIO_JUGADOR);
 }
     
-while (vidaDelJugador) {
-    
-}
+
 
 }
 
