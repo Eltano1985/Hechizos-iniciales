@@ -20,19 +20,21 @@ Considerar que:
 - cada hechizo tiene un valor de daño unico y el enemigo tiene 1 solo hechizo de ataque
  */
 
-const VIDA_INICIAL_JUGADOR = 10;
-const VIDA_INICIAL_ENEMIGO = 15;
+const VIDA_INICIAL_JUGADOR = "10";
+const VIDA_INICIAL_ENEMIGO = "15";
 const HECHIZO_1 = "Wingardium leviosa";
-const DAÑO_HECHIZO_1 = "3 puntos de daño";
+const DANIO_HECHIZO_1 = "3";
 const HECHIZO_2 = "Patronus";
-const DAÑO_HECHIZO_2 = "2 puntos de daño";
+const DANIO_HECHIZO_2 = "2";
 const HECHIZO_3 = "Expelliarmus";
-const DAÑO_HECHIZO_3 = "1 punto de daño";
-const DAÑO_JUGADOR= 4;
+const DANIO_HECHIZO_3 = "1";
+const DANIO_JUGADOR= "4";
 
 function main() {
 
 let numeroDeHechizo = 0;
+let vidaDelJugador = 0;
+let vidaDelEnemigo = 0;
 
 console.log("Ingrese uno de los 3 numeros de hechizos");
 numeroDeHechizo = Number(leer());
@@ -43,20 +45,25 @@ let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
 console.log("El numero secreto de hechizo es", numeroAleatorio);
 
 if (numeroDeHechizo == numeroAleatorio && numeroDeHechizo == 1) {
-    console.log("Atacaste a tu enemigo con un", HECHIZO_1, "y le hiciste", DAÑO_HECHIZO_1);
-    console.log("La vida de tu enemigo es", VIDA_INICIAL_ENEMIGO - DAÑO_HECHIZO_1);
+    console.log("Atacaste a tu enemigo con un", HECHIZO_1, "y le hiciste", DANIO_HECHIZO_1);
+    console.log("La vida de tu enemigo es", vidaDelEnemigo = VIDA_INICIAL_ENEMIGO - DANIO_HECHIZO_1);
 }
 if (numeroDeHechizo == numeroAleatorio && numeroDeHechizo == 2) {
-    console.log("Atacaste a tu enemigo con un", HECHIZO_2, "y le hiciste", DAÑO_HECHIZO_2);
-    console.log("La vida de tu enemigo es", VIDA_INICIAL_ENEMIGO - DAÑO_HECHIZO_2);
+    console.log("Atacaste a tu enemigo con un", HECHIZO_2, "y le hiciste", DANIO_HECHIZO_2);
+    console.log("La vida de tu enemigo es", vidaDelEnemigo = VIDA_INICIAL_ENEMIGO - DANIO_HECHIZO_2);
 }
 if (numeroDeHechizo == numeroAleatorio && numeroDeHechizo == 3) {
-    console.log("Atacaste a tu enemigo con un", HECHIZO_3, "y le hiciste", DAÑO_HECHIZO_3);
-    console.log("La vida de tu enemigo es", VIDA_INICIAL_ENEMIGO - DAÑO_HECHIZO_3);
-} else {
-    console.log("No acertaste el hechizo");
-    console.log("Tu vida es", VIDA_INICIAL_JUGADOR - DAÑO_JUGADOR);
+    console.log("Atacaste a tu enemigo con un", HECHIZO_3, "y le hiciste", DANIO_HECHIZO_3);
+    console.log("La vida de tu enemigo es", vidaDelEnemigo = VIDA_INICIAL_ENEMIGO - DANIO_HECHIZO_3);
 }
+if (numeroDeHechizo != numeroAleatorio ) {
+    console.log("No acertaste el hechizo");
+    console.log("Tu vida es", vidaDelJugador = VIDA_INICIAL_JUGADOR - DANIO_JUGADOR);
+}
+    
+
+
+
 
 
 
