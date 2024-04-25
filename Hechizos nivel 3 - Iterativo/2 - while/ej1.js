@@ -35,13 +35,17 @@ function main() {
 let numeroDeHechizo = 0;
 let vidaDelJugador = 0;
 let vidaDelEnemigo = 0;
+let min = 1;
+let max = 3;
+let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+
+while (vidaDelJugador >= 1 && vidaDelJugador >=-1) {
+
 
 console.log("Ingrese uno de los 3 numeros de hechizos");
 numeroDeHechizo = Number(leer());
 
-let min = 1;
-let max = 3;
-let numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
+
 console.log("El numero secreto de hechizo es", numeroAleatorio);
 
 if (numeroDeHechizo == numeroAleatorio && numeroDeHechizo == 1) {
@@ -61,8 +65,11 @@ if (numeroDeHechizo != numeroAleatorio ) {
     console.log("Tu vida es", vidaDelJugador = VIDA_INICIAL_JUGADOR - DANIO_JUGADOR);
 }
     
+while (vidaDelJugador) {
+    
+}
 
-
+}
 
 
 
