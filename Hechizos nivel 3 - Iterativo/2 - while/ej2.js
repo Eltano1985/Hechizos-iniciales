@@ -27,8 +27,10 @@ function main() {
     let max = 3;
     let vidaDelJugador = 100;
     let vidaDelAmigo = 80;
-
-while (vidaDelJugador > 0 && vidaDelAmigo > 0) {
+    let aparecePersonaMisteriosa = false;
+    let turno = 0;
+    
+    while (vidaDelJugador > 0 && vidaDelAmigo > 0 && !aparecePersonaMisteriosa) {
     
     console.log("Ingrese un numero entre 0 y 3");
     numeroIngresado = Number(leer());
@@ -48,12 +50,13 @@ while (vidaDelJugador > 0 && vidaDelAmigo > 0) {
         console.log("Los dementores atacaron a tu amigo");
         console.log("La vida de tu amigo es", vidaDelAmigo = vidaDelAmigo - DANIO_AMIGO);
     }
-
-
-
+    turno = turno +1;
+    console.log("El turno es", turno);
 }
 
 }
+
+
 
 
 
