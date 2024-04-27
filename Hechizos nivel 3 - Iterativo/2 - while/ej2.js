@@ -27,9 +27,11 @@ function main() {
     let max = 3;
     let vidaDelJugador = 100;
     let vidaDelAmigo = 80;
-    let aparecePersonaMisteriosa = false;
+    let aparecePersonaMisteriosa = 0;
     let turno = 0;
-    
+    let numeroAleatorio2 = 0;
+    let min2 = 0;
+    let max2 = 1;
     while (vidaDelJugador > 0 && vidaDelAmigo > 0 && !aparecePersonaMisteriosa) {
     
     console.log("Ingrese un numero entre 0 y 3");
@@ -37,7 +39,7 @@ function main() {
 
     numeroAleatorio = Math.floor(Math.random() * (max - min + 1)) + min;
     console.log("El numero aleatorio es", numeroAleatorio);
-
+    
     if (numeroIngresado == numeroAleatorio) {
         console.log("Protegiste tus recuerdos y los de tu amigo");
         console.log("Tu vida es ", vidaDelJugador, "y la de tu amigo es", vidaDelAmigo);
@@ -52,9 +54,23 @@ function main() {
     }
     turno = turno +1;
     console.log("El turno es", turno);
-}
+    
+    if (turno>5) {
+        console.log("Ingresar 1 para que aparzca la persona misteriosa");
+        aparecePersonaMisteriosa=Number(leer());
+        numeroAleatorio2 = Math.floor(Math.random() * (max2 - min2 + 1)) + min2
+        if (aparecePersonaMisteriosa == numeroAleatorio) {
+            console.log("Derrotaste a tu enemigo");
+        }
+    }
+    }
+    
+    
+    }
 
-}
+
+
+
 
 
 
