@@ -30,8 +30,8 @@ function main() {
     let aparecePersonaMisteriosa = 0;
     let turno = 0;
     let numeroAleatorio2 = 0;
-    let min2 = 0;
-    let max2 = 1;
+    let minProbMisteriosa = 0;
+    let maxProbMisteriosa = 1;
     while (vidaDelJugador > 0 && vidaDelAmigo > 0 && !aparecePersonaMisteriosa) {
     
     console.log("Ingrese un numero entre 0 y 3");
@@ -56,9 +56,11 @@ function main() {
     console.log("El turno es", turno);
     
     if (turno>5) {
-        aparecePersonaMisteriosa = Math.floor(Math.random() * (max2 - min2 + 1)) + min2
-        if (aparecePersonaMisteriosa == numeroAleatorio2) {
+        aparecePersonaMisteriosa = Math.floor(Math.random() * (maxProbMisteriosa - minProbMisteriosa + 1)) + minProbMisteriosa
+        console.log(aparecePersonaMisteriosa);
+        if (aparecePersonaMisteriosa == 1){
             console.log("Derrotaste a tu enemigo");
+
         
         }
     }
