@@ -56,11 +56,10 @@ function main() {
     console.log("El turno es", turno);
     
     if (turno>5) {
-        console.log("Ingresar 1 para que aparzca la persona misteriosa");
-        aparecePersonaMisteriosa=Number(leer());
-        numeroAleatorio2 = Math.floor(Math.random() * (max2 - min2 + 1)) + min2
-        if (aparecePersonaMisteriosa == numeroAleatorio) {
+        aparecePersonaMisteriosa = Math.floor(Math.random() * (max2 - min2 + 1)) + min2
+        if (aparecePersonaMisteriosa == numeroAleatorio2) {
             console.log("Derrotaste a tu enemigo");
+        
         }
     }
     }
