@@ -1,5 +1,30 @@
 const leer = require("prompt-sync")();
 
+const NOMBRE_HORROCRUX_1 = "Diario de Tom Riddle es R1dd13?";
+const NOMBRE_HORROCRUX_2 = "Anillo de Gaunt es ?G4unt!";
+const NOMBRE_HORROCRUX_3 = "Copa de Helga Hufflepuff es H3l?ga!";
+const NOMBRE_HORROCRUX_4 = "Diadema de Rowena Ravenclaw es ?R4vena";
+const NOMBRE_HORROCRUX_5 = "Nagini (serpiente) es N@9ini?";
+
+const PROBABILIDAD_HORROCRUX_1 = 0.05;
+const PROBABILIDAD_HORROCRUX_2 = 0.074;
+const PROBABILIDAD_HORROCRUX_3 = 0.098;
+const PROBABILIDAD_HORROCRUX_4 = 0.122;
+const PROBABILIDAD_HORROCRUX_5 = 0.146;
+
+const CANT_INICIAL_INTENTOS = 30;
+const PUNTOS_INICIAL_CORDURA = 200;
+const PUNTOS_INICIAL_SALUD = 400;
+
+const DANIO_HORROCRUX_CORDURA = 5.7;
+const DANIO_HORROCRUX_SALUD = 10.4;
+
+const PROBABILIDAD_RECHAZO_HORROCRUX_1 = 0.5;
+const PROBABILIDAD_RECHAZO_HORROCRUX_2 = 0.38125;
+const PROBABILIDAD_RECHAZO_HORROCRUX_3 = 0.2625;
+const PROBABILIDAD_RECHAZO_HORROCRUX_4 = 0.14475;
+const PROBABILIDAD_RECHAZO_HORROCRUX_5 = 0.024;
+
 function main() {
     
 }
